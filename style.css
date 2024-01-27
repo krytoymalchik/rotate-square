@@ -1,0 +1,49 @@
+*  {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: black ;
+}
+
+.box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh
+}
+
+.square {
+	height: 100px;
+	width: 100px;
+	border: 5px solid crimson;
+	animation: rotate 5s ease infinite, borderChange 5s ease infinite;
+}
+
+@keyframes rotate {
+	0% {
+	transform: rotate(0deg);
+}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes borderChange {
+	0% {
+		border-radius: 0%;
+	}
+	25% {
+		border-radius: 50%;
+	}
+	50% {
+		border-radius: 0%;
+	}
+	75% {
+		border-radius: 50%;
+	}
+	100%{
+		border-radius: 0%;
+	}
+}
